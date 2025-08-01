@@ -1,10 +1,16 @@
-app = "Sandlot"
+app = "sandlot-bc9nta"
 
-[env]
+[build]
+  image = "python:3.11"
 
 [[services]]
-  internal_port = 4000
+  internal_port = 4001
   protocol = "tcp"
 
   [[services.ports]]
-    port = 4000
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
