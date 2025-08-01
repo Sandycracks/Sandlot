@@ -1,7 +1,7 @@
 app = "sandlot-bc9nta"
-kill_signal = "SIGINT"
-kill_timeout = 5
-processes = []
+
+[build]
+  image = "python:3.11"
 
 [env]
 PORT = "4001"
@@ -11,9 +11,9 @@ PORT = "4001"
   protocol = "tcp"
 
   [[services.ports]]
-    handlers = ["http"]
     port = 80
+    handlers = ["http"]
 
   [[services.ports]]
-    handlers = ["tls", "http"]
     port = 443
+    handlers = ["tls", "http"]
