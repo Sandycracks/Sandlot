@@ -1,0 +1,10 @@
+app = "Sandlot"
+
+[env]
+
+[[services]]
+  internal_port = 4000
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 4000
