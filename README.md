@@ -1,1 +1,0 @@
-# Sample Evennia game created by ChatGPT
