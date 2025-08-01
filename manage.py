@@ -1,0 +1,1 @@
+# Evennia manage script placeholder
