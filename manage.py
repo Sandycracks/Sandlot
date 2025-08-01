@@ -1,1 +1,0 @@
-# manage script for Evennia
